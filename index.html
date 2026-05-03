@@ -54,7 +54,7 @@ body:has(a:hover) #cursor-ring,body:has(button:hover) #cursor-ring{width:50px;he
 
 /* ── NAV ── */
 nav{position:fixed;top:0;left:0;right:0;z-index:900;padding:0 5vw;height:64px;display:flex;align-items:center;justify-content:space-between;transition:background .3s,backdrop-filter .3s,border-bottom .3s}
-nav.scrolled{background:rgba(6,8,16,0.85);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid var(--border)}
+nav.scrolled{background:rgba(4, 8, 24, 0.801);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid var(--border)}
 .nav-logo{font-family:'Syne',sans-serif;font-weight:800;font-size:1.3rem;letter-spacing:-0.5px}
 .nav-logo span{color:var(--cyan)}
 .nav-links{display:flex;gap:2rem;align-items:center}
@@ -67,10 +67,13 @@ nav.scrolled{background:rgba(6,8,16,0.85);backdrop-filter:blur(20px);-webkit-bac
 .hamburger.open span:nth-child(1){transform:rotate(45deg) translate(5px,5px)}
 .hamburger.open span:nth-child(2){opacity:0}
 .hamburger.open span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px)}
-.mobile-menu{display:none;position:fixed;inset:0;background:rgba(6,8,16,0.97);z-index:890;flex-direction:column;align-items:center;justify-content:center;gap:2.5rem;opacity:0;pointer-events:none;transition:opacity .35s}
+.mobile-menu{display:none;position:fixed;inset:0;background:rgba(10, 11, 12, 0.911);z-index:890;flex-direction:column;align-items:center;
+  justify-content:center;gap:2.5rem;opacity:0;pointer-events:none;transition:opacity .35s;-webkit-backdrop-filter: blur(10px);
+   /* Support for Safari */
+    backdrop-filter: blur(10px);}
 .mobile-menu.open{opacity:1;pointer-events:all}
-.mobile-menu a{font-family:'Syne',sans-serif;font-size:2rem;font-weight:700;color:var(--muted);transition:color .2s}
-.mobile-menu a:hover{color:var(--cyan)}
+.mobile-menu a{font-family:'Syne',sans-serif;font-size:2rem;font-weight:700;color:#22dfff;transition:color .2s}
+.mobile-menu a:hover{color:var(--cyan);}
 @media(max-width:768px){.nav-links{display:none}.hamburger{display:flex}.mobile-menu{display:flex}}
 
 /* ── HERO ── */
@@ -308,7 +311,7 @@ footer{background:var(--bg0);border-top:1px solid var(--border);padding:28px 5vw
     </div>
     <h1 class="hero-name">
       <span class="line1">Muktader Hasen</span>
-      <span class="line2">Saif</span>
+      &nbsp;<span class="line2">Saif</span>
     </h1>
     <p class="hero-sub">Aspiring AI Engineer — building smart things with code, curiosity, and a calm mind.</p>
     <div class="hero-typing">
@@ -320,7 +323,7 @@ footer{background:var(--bg0);border-top:1px solid var(--border);padding:28px 5vw
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         View Projects
       </a>
-      <a href="cv.pdf" download title="Download Saif's CV — Muktader Hasen Saif" class="btn-cv">
+      <a href="Saif_cv.pdf" download title="Download Saif's CV — Muktader Hasen Saif" class="btn-cv">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
         Download CV
       </a>
@@ -340,7 +343,10 @@ footer{background:var(--bg0);border-top:1px solid var(--border);padding:28px 5vw
         <p class="section-label">Who I Am</p>
         <h2 class="section-title">Building the<br/><span class="accent">Foundation</span></h2>
         <p style="color:var(--muted);font-size:.95rem;line-height:1.8;font-weight:300;margin-bottom:1rem;">
-          I'm Muktader Hasen Saif, from Kushtia, Bangladesh. A self-driven developer and AI enthusiast who's been learning to code and build things since graduating with a perfect score in 2024.
+          "I'm Saif — a self-taught builder from Kushtia, Bangladesh.
+           While most people are still figuring out what to study, I'm already building. I scored a perfect GPA, then immediately pivoted to web development, Python, and AI tools — because I knew grades alone wouldn't get me where I want to go.
+           Every project here was me picking up a skill and using it to solve something real. I don't just learn technology — I build with it.
+           This is where my journey is documented. It's only getting started."
         </p>
         <p style="color:var(--muted);font-size:.95rem;line-height:1.8;font-weight:300;">
           I believe in learning by doing — every project, every bug fixed, every concept understood gets me closer to becoming the engineer I'm working towards.
